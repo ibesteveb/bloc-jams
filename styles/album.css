@@ -1,0 +1,83 @@
+body.album {
+     background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center center;
+     background-size: cover;
+ }
+
+ .album-cover-art {
+     position: relative;
+     left: 20%;
+     margin-top: 1rem;
+     width: 60%;
+ }
+
+ .album-view-details {
+     position: relative;
+     top: 1.5rem;
+     padding: 1rem;
+ }
+
+ .album-view-details .album-view-title {
+     font-weight: 300;
+     font-size: 2rem;
+ }
+
+ .album-view-details .album-view-artist {
+     font-weight: 300;
+     font-size: 1.5rem;
+ }
+
+ .album-view-details .album-view-release-info {
+     font-weight: 300;
+     font-size: 0.75rem;
+ }
+
+ <table class="album-view-song-list">
+                 <tr class="album-view-song-item">
+                     <td class="song-item-number">1</td>
+                     <td class="song-item-title">Blue</td>
+                     <td class="song-item-duration">X:XX</td>
+                 </tr>
+                 <tr class="album-view-song-item">
+                     <td class="song-item-number">2</td>
+                     <td class="song-item-title">Red</td>
+                     <td class="song-item-duration">X:XX</td>
+                 </tr>
+                 <tr class="album-view-song-item">
+                     <td class="song-item-number">3</td>
+                     <td class="song-item-title">Green</td>
+                     <td class="song-item-duration">X:XX</td>
+                 </tr>
+                 <tr class="album-view-song-item">
+                     <td class="song-item-number">4</td>
+                     <td class="song-item-title">Purple</td>
+                     <td class="song-item-duration">X:XX</td>
+                 </tr>
+                 <tr class="album-view-song-item">
+                     <td class="song-item-number">5</td>
+                     <td class="song-item-title">Black</td>
+                     <td class="song-item-duration">X:XX</td>
+                 </tr>
+             </table>
+
+@media (max-width: 640px) and (min-width: 320px) {
+     .album-view-details {
+         text-align: center;
+     }
+
+     .album-view-title {
+         margin-top: 0;
+     }
+ }
+
+ /* #3 */
+ @media (max-width: 1024px) and (min-width: 320px) {
+    .album-view-song-list {
+         position: relative;
+         top: 1rem;
+         width: 80%;
+         margin: auto;
+     }
+ }
